@@ -1,6 +1,6 @@
 # ac-dc-store-angular-6
 
-Essa é uma lója básica de vendas de discos feita em angular 6, sem interação com banco de dados.
+Essa é uma loja básica de vendas de discos feita em angular 6, sem interação com banco de dados.
 
 Contém os seguintes módulos:
 
