@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import "https://fonts.googleapis.com/css?family=Shadows+Into+Light";
+
+*{
+    font-family: "Shadows Into Light";
+}
+body{
+    margin:0;
+}
+.container
+{
+    width: 1140px;
+    margin: auto;
+    display: inline-block;
+    padding: 0 15px;
+    height: auto;
+}

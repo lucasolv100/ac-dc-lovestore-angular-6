@@ -1,0 +1,16 @@
+<div class="header">
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img src="{{logoURL}}"></a>
+    </div>
+    <div class="search">
+      <input type="text" #pesquisa placeholder="Qual musica você busca?"><button (click)="fazPesquisa(pesquisa)">Pesquisar</button>
+    </div>
+    <div class="menu">
+      <ul>
+        <!--<li><button (click)="showPortfolio()"> Portfólio </button></li>-->
+        <li><a href="#"><img src="{{cartURL}}"><span class="bg-round">{{cart}}</span></a></li>
+        </ul>
+    </div>
+  </div>
+</div>

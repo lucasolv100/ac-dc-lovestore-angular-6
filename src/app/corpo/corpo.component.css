@@ -1,0 +1,156 @@
+#corpo
+{
+    background: url("/assets/img/body/banner-corpo.jpg") no-repeat right center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 450px;
+}
+.institucional
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 450px;
+}
+.texto p{
+    margin: 0;
+}
+.texto{
+    width: 40%;
+    font-size: 21px;
+    color: #ffffff;
+    float: right;
+}
+.texto button, .infos button{
+    border: 0;
+    border-radius: 6px;
+    padding: 9px;
+    margin-top: 9px;
+    background: #c6a577;
+    font-size: 18px;
+    transition: 0.3s all;
+    cursor: pointer;
+    outline: none;
+}
+.texto button:hover, .infos button:hover{
+    background: #d68a21;
+}
+.grid ul li{
+    display: inline-block;
+    width: 29%;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+.grid ul li img{
+    width: 100%;
+}
+.infos .preco
+{
+    display: block;
+    font-size: 30px;
+}
+/* estilização página de produtos */
+#pgproduto .imagem-destaque
+{
+    float: left;
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#pgproduto .imagem-destaque img{
+    width: 100%;
+}
+#pgproduto .infos{
+    float: right;
+    width: 49%;
+    margin-top: 30px;
+}
+#pgproduto .inputCompra
+{
+    font-size: 21px;
+    text-align: center;
+    width: 30%;
+    height: 40px;
+}
+#pgproduto .actions
+{
+    float: left;
+    width: 50%;
+}
+#pgproduto .comprar
+{
+    float: right;
+    width: 50%;
+}
+#pgproduto .comprar button{
+    width: 100%;
+    margin-top: 0;
+}
+#pgproduto .actions button{
+    border-radius: 0;
+    margin-top: 0;
+    height: 46px;
+    padding: 10px;
+}
+#pgproduto .preco{
+    margin: 36px 0;
+}
+/* customização pg carrinho */
+#pgcarrinho table{
+    width: 75%;
+    float: left;
+    min-height: 400px;
+    margin-top: 30px;
+
+}
+#pgcarrinho table img{
+    width: 120px;
+}
+#pgcarrinho .finalizacao
+{
+    width: 25%;
+    float: right;
+    min-height: 400px;
+    display: block;
+    font-size: 45px;
+    margin-top: 30px;
+}
+#pgcarrinho .continuar-compra
+{
+    clear: both;
+    text-align: left;
+    padding-left: 15px;
+}
+#pgcarrinho button{
+    height: 39px;
+    border: 0;
+    border-radius: 6px;
+    margin-top: 0px;
+    margin-left: 3px;
+    background: #c6a577;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.3s all;
+    cursor: pointer;
+    outline: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#pgcarrinho button:hover{
+    background: #d68a21;
+}
+#pgcarrinho .btn-finaliza
+{
+    width: 80%;
+    font-size: 20px;
+}
+#sucesso
+{
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

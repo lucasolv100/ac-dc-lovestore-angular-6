@@ -1,0 +1,84 @@
+.header
+{
+    background: #212121;
+    border-bottom: #ccc;
+    padding: 15px;
+}
+.header .logo
+{
+    float: left;
+    width: 15%;
+}
+.header .logo img{
+    width: 100%;
+}
+.header p{
+    font-size: 21px;
+    text-align: center;
+    color: #333;
+    margin:0;
+}
+.header .search
+{
+    float: left;
+    width: 60%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .search input{
+    width: 75%;
+    height: 36px;
+    border-radius: 6px;
+    border: 0;
+    padding-left: 21px;
+    font-size: 17px;
+    outline: none;
+}
+.header .search button{
+    height: 39px;
+    border: 0;
+    border-radius: 6px;
+    margin-top: 0px;
+    margin-left: 3px;
+    background: #c6a577;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.3s all;
+    cursor: pointer;
+    outline: none;
+}
+.header .search button:hover{
+    background: #d68a21;
+}
+.header .menu
+{
+    float: left;
+    width: 25%;
+    text-align: right;
+}
+.header .menu img{
+    width: 30px;
+}
+.header .menu ul{
+    list-style: none;
+}
+.header .menu ul li{
+    display: inline;
+    padding: 12px; 
+}
+.header .bg-round{
+    background: #c6a577;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0px 10px;
+    font-size: 15px;
+    position: relative;
+    top: -15px;
+    left: -9px;
+}
+.header .menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}

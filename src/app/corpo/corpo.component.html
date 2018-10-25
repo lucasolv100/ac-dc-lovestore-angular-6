@@ -1,0 +1,103 @@
+<section id="corpo" *ngIf="home">
+  <div class="institucional container">
+    <div class="texto">
+      <p>Esse projeto foi feito usando Angular 6, navegue na store, simule compras, mas lembre-se, nada disso está
+        sendo
+        registrado em alguma base de dados.</p>
+      <button (click)="showPortfolio()">Ir ao portfólio</button>
+    </div>
+  </div>
+</section>
+<section id="grid-home" *ngIf="home">
+  <div class="container titulo">
+    <h2>Produtos em destaque</h2>
+  </div>
+  <div class="container grid">
+    <ul style="list-style:none;">
+      <li *ngFor="let image of imgObjeto | slice:0:3;">
+        <img class="foto-destaque" src="{{image.imagem}}">
+        <div class="infos">
+          <span class="preco">Por: {{image.preco | currency: 'BRL'}}</span>
+          <button (click)="showProduct(image.id)">Ver detalhes</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section id="pgproduto" *ngIf="pgproduto">
+  <div class="container">
+    <div class="imagem-destaque">
+      <img id="img1" src="{{produtoFiltrado.imagem}}">
+    </div>
+    <div class="infos">
+      <h2>{{produtoFiltrado.nome | uppercase}}</h2>
+      <div class="descricao">
+        <p>{{produtoFiltrado.descricao}}</p>
+      </div>
+      <div class="preco">
+        <span>Por: {{precoProduto | currency:'BRL'}}</span>
+      </div>
+      <div class="actions">
+        <button (click)="qtyDown()">-</button>
+        <input type="text" value="{{valor}}" class="inputCompra">
+        <button (click)="qtyUp()">+</button>
+      </div>
+      <div class="comprar">
+        <button (click)="finalizaPedido(produtoFiltrado.id, valor)">Comprar</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="pgcarrinho" class="container" *ngIf="pgcart">
+  <table class="grid-produtos">
+      
+    <tr>
+      <th></th>
+      <th> Produto</th>
+      <th> Qtd</th>
+      <th> Preço Unit.</th>
+      <th> Subtotal</th>
+    </tr>
+    <tr *ngFor="let item of cartItem">
+      <td>
+          <img class="fotoproduto" src="{{item.imagem}}">
+      </td>
+      <td>
+          {{item.nome}}
+      </td>
+      <td>
+          {{item.qtd}}
+      </td>
+      <td>
+          {{item.preco | currency:'BRL'}}
+      </td>
+      <td>
+          {{item.preco * item.qtd | currency:'BRL'}}
+      </td>
+    </tr>
+  </table>
+  <div class="finalizacao">
+    <p>Total do pedido <strong>{{totalCart | currency:'BRL'}}</strong></p>
+    <button class="btn-finaliza" (click)="showSucesso()">Finalizar Pedido</button>
+  </div>
+  <div class="continuar-compra"><button (click)="continuarComprando()">Continuar comprando</button><button (click)="esvaziarCarrinho()">Esvaziar carrinho</button></div>
+</section>
+<section id="catalogo" *ngIf="pgcatalogo">
+  <h2>Portfólio de produtos</h2>
+  <div class="container grid">
+      <ul style="list-style:none;">
+        <li *ngFor="let image of imgObjeto">
+          <img class="foto-destaque" src="{{image.imagem}}">
+          <div class="infos">
+            <span class="preco">Por: {{image.preco | currency: 'BRL'}}</span>
+            <button (click)="showProduct(image.id)">Ver detalhes</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+</section>
+<section id="sucesso" *ngIf="sucesso">
+  <div class="container">
+    <h2>Obrigado por comprar na AC/DC store, volte sempre!</h2>
+  </div>
+</section>
