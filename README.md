@@ -12,17 +12,17 @@ Catálogo;
  - Possui uma lista com todos os produtos cadastrados em um objeto JSON;
 
 Pg Produto;
-	- Contem a imagem de destaque;
-	- Nome;
-	- Preço;
-	- Campo para selecionar quantidade;
-	- Botão de adicionar ao carrinho;
+ - Contem a imagem de destaque;
+ - Nome;
+ - Preço;
+ - Campo para selecionar quantidade;
+ - Botão de adicionar ao carrinho;
 
 Carrinho;
-	- Contém grid de produtos dinamica;
-	- Botão continuar comprando;
-	- Botão esvaziar carrinho;
-	- Botão de finalização de pedido;
+ - Contém grid de produtos dinamica;
+ - Botão continuar comprando;
+ - Botão esvaziar carrinho;
+ - Botão de finalização de pedido;
 
 Sucesso;
  - Contém apenas uma mensagem informativa;
