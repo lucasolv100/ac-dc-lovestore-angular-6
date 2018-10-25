@@ -177,6 +177,7 @@ export class CorpoComponent implements OnInit {
     this.cartItem = [];
     this.totalCart = 0;
     this.qty.emit(0);
+    
   }
 
 
